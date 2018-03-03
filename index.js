@@ -10,7 +10,7 @@ var handlers = {
         this.emit('AMAZON.HelpIntent');
     },
     'AMAZON.HelpIntent': function () {
-        this.emit(':tell', HELP_MESSAGE);
+        this.emit(':ask', HELP_MESSAGE);
     },
     'MemoIntent': function () {
         var memo = this.event.request.intent.slots.Memo.value;
